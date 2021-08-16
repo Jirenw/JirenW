@@ -87,11 +87,11 @@ const { othermenu } require('./database/menu/othermenu')*/
 /******FIN DE ENTRADA DEL MENÚ******/
 
 /******CARGA DE ENTRADA VCARD******/
-const vcard = 'BEGIN:VCARD\n' // Tarjeta de contacto
+const vcard = 'BEGIN:VCARD\n' //
             + 'VERSION:3.0\n' 
-            + 'FN:Shan\n' // Nombre
-            + 'ORG:Shanduy;\n' // Propietario
-            + 'TEL;type=CELL;type=VOICE;waid=593967689722:+593 96 768 9722\n' // ID de WhatsApp + número de teléfono
+            + 'FN:BOT\n' // JIREN
+            + 'ORG:Jiren;\n' // 〲⎠⎠ɪʀᴇɴ〴᭄Y🌹⃢⃟ꦼ𝔚𝔢𝔫𝔡𝔶-𝔠𝔥𝔞𝔫༒⃢⃟🇲🇽
+            + 'TEL;type=CELL;type=VOICE;waid=:\n' // ID de WhatsApp + número de teléfono
             + 'END:VCARD'
 /******FIN DE ENTRADA VCARD******/
 
@@ -107,7 +107,7 @@ const {
 
 /******INICIO DE FUNCIONES ENTRADA******/
 
-/******ARCHIVOS ANTILINK POR SHANDUY******/
+/******ARCHIVOS ANTILINK POR JIREN******/
 
 const antilink = JSON.parse(fs.readFileSync('./src/antilink.json'))
 const antiface = JSON.parse(fs.readFileSync('./src/antiface.json'))
@@ -190,7 +190,7 @@ const getLevelingXp = (userId) => {
 //LEVEL FIN
 	
 function addMetadata(packname, author) {	
-	if (!packname) packname = 'ShanBot'; if (!author) author = 'Shanduy';	
+	if (!packname) packname = '☪⃟⚜⃝𝔸ℕ𝕀𝕄𝔼&𝕄𝔸𝕊⃝➳⃟♾'; if (!author) author = 'By.〲⎠⎠ɪʀᴇɴ〴᭄Y🌹⃢⃟ꦼ𝔚𝔢𝔫𝔡𝔶-𝔠𝔥𝔞𝔫༒⃢⃟🇲🇽';	
 	author = author.replace(/[^a-zA-Z0-9]/g, '');	
 	let name = `${author}_${packname}`
 	if (fs.existsSync(`./${name}.exif`)) return `./${name}.exif`
@@ -524,12 +524,12 @@ async function starts() {
        /******ENTRADA FIN DE FUNCIONES******/
 			function addMetadata(packname, author) {	
 				if (!packname) packname = 'ShanBot'; if (!author) author = 'Shanduy';	
-				author = author.replace(/[^a-zA-Z0-9]/g, '');	
+				author = ☪⃟⚜⃝𝔸ℕ𝕀𝕄𝔼&𝕄𝔸𝕊⃝➳⃟♾.〲⎠⎠ɪʀᴇɴ〴᭄Y🌹⃢⃟ꦼ𝔚𝔢𝔫𝔡𝔶-𝔠𝔥𝔞𝔫༒⃢⃟🇲🇽(/[^a-zA-Z0-9]/g, '');	
 				let name = `${author}_${packname}`
 				if (fs.existsSync(`./src/stickers/${name}.exif`)) return `./src/stickers/${name}.exif`
 				const json = {	
-					"sticker-pack-name": packname,
-					"sticker-pack-publisher": author,
+					"sticker-pack-name": ☪⃟⚜⃝𝔸ℕ𝕀𝕄𝔼&𝕄𝔸𝕊⃝➳⃟♾,
+					"sticker-pack-publisher": 〲⎠⎠ɪʀᴇɴ〴᭄Y🌹⃢⃟ꦼ𝔚𝔢𝔫𝔡𝔶-𝔠𝔥𝔞𝔫༒⃢⃟🇲🇽,
 				}
 				const littleEndian = Buffer.from([0x49, 0x49, 0x2A, 0x00, 0x08, 0x00, 0x00, 0x00, 0x01, 0x00, 0x41, 0x57, 0x07, 0x00])	
 				const bytes = [0x00, 0x00, 0x16, 0x00, 0x00, 0x00]	
@@ -618,13 +618,13 @@ async function starts() {
 					if (mentioned.length > 1) {
 						teks = ''
 						for (let _ of mentioned) {
-							teks += `Pedido recibido✅\n\nRetirando cargo como administrador :\n`
+							teks += `Pedido recibido✅\n\nQuitando admin porque le falta odio:\n`
 							teks += `@_.split('@')[0]`
 						}
 						mentions(teks, mentioned, true)
 						client.groupDemoteAdmin(from, mentioned)
 					} else {
-						mentions(`Pedido recibido✅\n\nRetirando cargo como administrador @${mentioned[0].split('@')[0]}\n*${groupMetadata.subject}*_`, mentioned, true)
+						mentions(`Pedido recibido✅\n\nQuitando Admin @${mentioned[0].split('@')[0]}\n*${groupMetadata.subject}*_`, mentioned, true)
 						client.groupDemoteAdmin(from, mentioned)
 					}
 					break
@@ -865,7 +865,7 @@ break
 				  case 'ownergroup':
                client.updatePresence(from, Presence.composing) 
               options = {
-          text: `El NEFASTO de este grupo es :@${from.split("-")[0]}`, 
+          text: `El PUTO de este grupo es :@${from.split("-")[0]}`, 
           contextInfo: { mentionedJid: [from] }
            }
            client.sendMessage(from, options, text, { quoted: mek } )
@@ -1050,7 +1050,7 @@ break
                                      if (!isUser) return reply(mess.only.daftarB)
 					if (!isBotGroupAdmins) return reply(mess.only.Badmin)
 					linkgc = await client.groupInviteCode (from)
-					yeh = `Aqui esta el link del grupo 🤑\n\nhttps://chat.whatsapp.com/${linkgc}\n\nLink Del Grupo *${groupName}*`
+					yeh = `*E AQUI EL LINK DEL GRUPO* \n\nhttps://chat.whatsapp.com/${linkgc}\n\nLink Del Grupo *${groupName}*`
 					client.sendMessage(from, yeh, text, {quoted: mek, detectLinks: false})
 					break
                 case 'qrcode':
@@ -1086,7 +1086,7 @@ break
 					break
 				                case 'attp':
 						if (!isUser) return reply(mess.only.daftarB)
-					        if (args.length < 1) return reply(`¿Dónde está el texto?\n*Ejemplo:* ${prefix}attp shanduy`)
+					        if (args.length < 1) return reply(`¿Dónde está el texto?\n*Ejemplo:* ${prefix}attp 〲⎠⎠ɪʀᴇɴ〴᭄Y🌹⃢⃟ꦼ𝔚𝔢𝔫𝔡𝔶-𝔠𝔥𝔞𝔫༒⃢⃟🇲🇽`)
 						reply(mess.only.attp)
 					        attp2 = await getBuffer(`https://api.xteam.xyz/attp?file&text=${body.slice(6)}`)
 						client.sendMessage(from, attp2, MessageType.sticker, {quoted: mek})
@@ -1179,7 +1179,7 @@ break
 						fs.unlinkSync(media)
 						if (err) return reply('❌ No se pudo convertir el sticker en imágenes')
 						buffer = fs.readFileSync(ran)
-						client.sendMessage(from, buffer, image, {quoted: mek, caption: '*⌈ Imagen convertida ✅ ⌉*\n\nву ѕнαη∂υу'})
+						client.sendMessage(from, buffer, image, {quoted: mek, caption: '*⌈ Imagen convertida ✅ ⌉*\n\nBy.〲⎠⎠ɪʀᴇɴ〴᭄Y🌹⃢⃟ꦼ𝔚𝔢𝔫𝔡𝔶-𝔠𝔥𝔞𝔫༒⃢⃟🇲🇽'})
 						fs.unlinkSync(ran)
 					})
 					break
@@ -1239,13 +1239,13 @@ break
 				
 				case 'daftar':
 					client.updatePresence(from, Presence.composing)
-					if (isUser) return reply('Ya estas registrado 🧐')
+					if (isUser) return reply('Ya estas registrad@ ctmr, que ya te olvidaste?🧐')
 					if (args.length < 1) return reply(`Incorrecto \nComando : ${prefix}daftar Nombre\nComando : ${prefix}daftar 〲⎠⎠ɪʀᴇɴ〴᭄Y🌹⃢⃟ꦼ𝔚𝔢𝔫𝔡𝔶-𝔠𝔥𝔞𝔫༒⃢⃟🇲🇽`)
 					var reg = body.slice(8)
 					var nombre = reg.split("|")[0];
                                                 user.push(sender)
 						fs.writeFileSync('./database/json/user.json', JSON.stringify(user))
-						client.sendMessage(from, `\`\`\`REGISTRADO ✅\`\`\`\n\n\`\`\`DNI: EPICO 🥸\`\`\`\n\n\`\`\`Hora EC: ${time}\`\`\`\n\n\`\`\`Fecha: ${date}\`\`\`\n\n\`\`\`[Usuario]: ${nombre}\`\`\`\n\`\`\`[Número]: wa.me/${sender.split("@")[0]}\`\`\`\n\`\`\`Para usar el bot\`\`\`\n\`\`\`Por favor\`\`\`\n\`\`\`enviar ${prefix}help\`\`\`\n\`\`\`\nTotal de usuários ${user.length}\`\`\``, text, {quoted: mek})
+						client.sendMessage(from, `\`\`\`REGISTRADO ✅\`\`\`\n\n\`\`\`GRUPO: ☪⃟⚜⃝𝔸ℕ𝕀𝕄𝔼&𝕄𝔸𝕊⃝➳⃟♾ 🥸\`\`\`\n\n\`\`\`Hora EC: ${time}\`\`\`\n\n\`\`\`Fecha: ${date}\`\`\`\n\n\`\`\`[Usuario]: ${nombre}\`\`\`\n\`\`\`[Número]: wa.me/${sender.split("@")[0]}\`\`\`\n\`\`\`Para usar el bot\`\`\`\n\`\`\`Por favor\`\`\`\n\`\`\`enviar ${prefix}help\`\`\`\n\`\`\`\nTotal de usuários ${user.length}\`\`\``, text, {quoted: mek})
 					break
                                 case 'welcome':
 					if (!isGroup) return reply(mess.only.group)
@@ -1254,10 +1254,10 @@ break
 					if (!isGroupAdmins) return reply(mess.only.Badmin)
 					if (args.length < 1) return reply('Para activar está funcion coloca *welcome 1')
 					if (Number(args[0]) === 1) {
-						if (isWelkom) return reply('Ya esta activada!!!')
+						if (isWelkom) return reply('Ya esta activada la putamadre!!!')
 						welkom.push(from)
 						fs.writeFileSync('./database/json/welkom.json', JSON.stringify(welkom))
-						reply('❬ ✅ ❭ La funcion de bienvenida esta habilitada en este grupo')
+						reply('❬ ✅ ❭ La funcion de bienvenida esta habilitada en este grupo, desde ahora daré la Bienvenida a l@s fantamon@s que se Unan UwU.')
 					} else if (Number(args[0]) === 0) {
 						welkom.splice(from)
 						fs.writeFileSync('./database/json/welkom.json', JSON.stringify(welkom))
