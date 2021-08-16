@@ -1,20 +1,20 @@
 const help = (prefix) => {
 	return `
 
-⌜ *ѕнαηвσт ву ѕнαη∂υу* ⌟  
+⌜ *BoT-☪⃟⚜⃝𝔸ℕ𝕀𝕄𝔼&𝕄𝔸𝕊⃝➳⃟♾<>By.〲⎠⎠ɪʀᴇɴ〴᭄Y🌹⃢⃟ꦼ𝔚𝔢𝔫𝔡𝔶-𝔠𝔥𝔞𝔫༒⃢⃟🇲🇽* ⌟  
 
 ◉ *INFORMACION*
    ○ Comando: ⌜ ${prefix} ⌟
-   ○ Creador: ѕнαη∂υу™ 
-   ○ Como instalar el bot: https://www.youtube.com/watch?v=2LQSzEbpJ-M
-   ○ Instagram: https://www.instagram.com/thepavos
-
+   ○ Creador: JIREN™ 
+   ○ Como instalar el bot: Da weba XD
+   ○ GRUPO CHAT: https://chat.whatsapp.com/IIPycRBYF19F42yQETelNR
+   ○ GRUPO NOCHAT: https://chat.whatsapp.com/Ergz8BKQ1tgKmFzDsy4hY4
 
 ◉ *NUEVOS COMANDOS*
 ○ ${prefix}levelmenu
 Level para tus grupos
 ○ ${prefix}antimenu
-Su nombre lo dice todo (antilink)
+ Prohibicion de Links.
 ○ ${prefix}otak
 Monas chinas
 ○ ${prefix}shantera
@@ -28,15 +28,12 @@ Descargar musica y videos de YT
 ○ ${prefix}version
 Conoce la versión de tu bot
 ○ ${prefix}welmenu
-Comandos de bienvedia a grupos
+Comandos de bienvenida a grupos.
 
 ◉ *PARA USAR EL BOT*
-Registrate con el comando ${prefix}daftar y tu nombre
-
-◉ *RESUELVE TUS DUDAS*
-  ║
-  ╠ ○ ${prefix}creador
-  ╚ Dudas o problemas aqui
+Registrate con el comando ${prefix}daftar y tu nombre.
+Ejemplo.
+*daftar 〲⎠⎠ɪʀᴇɴ〴᭄Y🌹⃢⃟ꦼ𝔚𝔢𝔫𝔡𝔶-𝔠𝔥𝔞𝔫༒⃢⃟🇲🇽
 
 ◉ *CREAR STICKERS*
   ║
@@ -93,14 +90,12 @@ Para usar estas funciones el bot necesita admin
 Para activar los NSFW coloque el siguiente comando ${prefix}nsfw 1 y para desactivar los NSFW coloque ${prefix}nsfw 0
 
 
-No te olvides de seguirme en instagram flaco ;)
+No hagas spam ctmr si no responde el bot es porque está apagado, saturado u le dió lag. ;)
 
 
-ву ѕнαη∂υу
+By.〲⎠⎠ɪʀᴇɴ〴᭄Y🌹⃢⃟ꦼ𝔚𝔢𝔫𝔡𝔶-𝔠𝔥𝔞𝔫༒⃢⃟🇲🇽
 
 
-⌜ *ごきげんよう :)* ⌟ 
-`
-}
+Te Amo Wendy <3
 
 exports.help = help
